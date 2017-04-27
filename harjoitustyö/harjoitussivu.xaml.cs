@@ -29,7 +29,9 @@ using Windows.Storage.Pickers;
 namespace harjoitustyö
 {
     /// <summary>
-    /// 
+    /// *Ella Viitasuo Olio-ohjelmointi kurssi*
+    /// Sivu jossa harjoitus lisätään 
+    /// FilePickerin avulla tiedostoon tallentaminen
     /// </summary>
     public sealed partial class harjoitussivu : Page
     {
@@ -74,13 +76,12 @@ namespace harjoitustyö
         {
             //FilePicker
             FileOpenPicker picker = new FileOpenPicker();
-            // Set properties on the file picker such as start location and the type 
-            // of files to display.
+            //Valitse tiedosto
             picker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
             picker.ViewMode = PickerViewMode.List;
             picker.FileTypeFilter.Add(".txt");
 
-            // Show picker enabling user to pick one file.
+           
             StorageFile result = await picker.PickSingleFileAsync();
 
             if (result != null)

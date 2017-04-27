@@ -24,7 +24,10 @@ using Windows.UI.Xaml.Navigation;
 namespace harjoitustyö
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// *Ella Viitasuo Olio-ohjelmointi kurssi
+    /// Sivu jossa harjoitukset luetaan valitusta tiedostosta
+    /// Mahdollisia fiksauksia tiedostoon lukemiseen lisättävä myöhemmin
+    /// >> ei messageboxiin vaan textblock
     /// </summary>
     public sealed partial class harjoituslogisivu : Page
 

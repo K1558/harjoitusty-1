@@ -22,7 +22,8 @@ using Windows.UI.Xaml.Navigation;
 namespace harjoitustyö
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// *Ella Viitasuo Olio-ohjelmointi kurssi*
+    /// Pääsivu jolla navigoidaan muille sivuille
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -34,20 +35,20 @@ namespace harjoitustyö
 
         }
 
-        private void b1_Click(object sender, RoutedEventArgs e)
+        //Navigointi harjoitussivulle
+        private void harjoitus_Click(object sender, RoutedEventArgs e)
         {
+            
             this.Frame.Navigate(typeof(harjoitussivu));
         }
 
-        private void logo_Tapped(object sender, DoubleTappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
-        }
-
-        private void b2_Click(object sender, RoutedEventArgs e)
+        //Navigointi logisivulle
+        private void logi_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(harjoituslogisivu));
         }
+
+      
     }
 
 

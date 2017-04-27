@@ -26,8 +26,8 @@
                         <AdaptiveTrigger MinWindowWidth="900"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="b1.FontSize" Value="20"/>
-                        <Setter Target="b2.FontSize" Value="20"/>
+                        <Setter Target="harjoitus.FontSize" Value="20"/>
+                        <Setter Target="logi.FontSize" Value="20"/>
                         <Setter Target="Header.FontSize" Value="55"/>
                     </VisualState.Setters>
                 </VisualState>
@@ -36,8 +36,8 @@
                         <AdaptiveTrigger MinWindowWidth="1300"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="b2.FontSize" Value="40"/>
-                        <Setter Target="b1.FontSize" Value="40"/>
+                        <Setter Target="harjoitus.FontSize" Value="40"/>
+                        <Setter Target="logi.FontSize" Value="40"/>
                         <Setter Target="Header.FontSize" Value="60"/>
                     </VisualState.Setters>
                 </VisualState>
@@ -47,8 +47,8 @@
             <ImageBrush Stretch="Fill" ImageSource="Assets/fitmp.png" AlignmentX="Center" AlignmentY="Top"/>
         </Grid.Background>
         <RelativePanel HorizontalAlignment="Center"  Height="640">
-            <Button x:Name="b1" Content="Uusi harjoitus"  Margin="50"  Click="b1_Click" RelativePanel.Below="Header" BorderBrush="DarkGray" Background="Transparent" FontFamily="Yu Gothic" />
-            <Button x:Name="b2" Content="Harjoituslogi" Margin="50" RelativePanel.Below="b1" BorderBrush="DarkGray" Background="Transparent" FontFamily="Yu Gothic" Click="b2_Click"/>
+            <Button x:Name="harjoitus" Content="Uusi harjoitus"  Margin="50"  Click="harjoitus_Click" RelativePanel.Below="Header" BorderBrush="DarkGray" Background="Transparent" FontFamily="Yu Gothic" />
+            <Button x:Name="logi" Content="Harjoituslogi" Margin="50" RelativePanel.Below="harjoitus" BorderBrush="DarkGray" Background="Transparent" FontFamily="Yu Gothic" Click="logi_Click"/>
             <TextBlock x:Name="Header" Height="auto" TextWrapping="Wrap" Text="Treenisi" VerticalAlignment="Top" FontFamily="Yu Gothic" FontSize="48" Margin="30" Foreground="OldLace" CharacterSpacing="-1"/>
         </RelativePanel>
     </Grid>
