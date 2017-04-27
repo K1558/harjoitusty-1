@@ -124,7 +124,8 @@ namespace harjoitustyö
                 harjoitus.Kommentit = kommentit.Text;
                 harjoitus.Fiilis = slidervalue.Text;
 
-                string line = harjoitus.Paiva + ":" + harjoitus.Laji + ":" + harjoitus.MaxSyke + ":" + harjoitus.AvgSyke + ":" + harjoitus.Kalorit + ":" + harjoitus.Kommentit + ":" + harjoitus.Fiilis + Environment.NewLine;
+                string line = harjoitus.Paiva + " Laji: " + harjoitus.Laji + " MaxSyke: " + harjoitus.MaxSyke + " KeskiSyke: " + harjoitus.AvgSyke + " Kalorit: " + harjoitus.Kalorit + " Kommentit: " + harjoitus.Kommentit + " : " + harjoitus.Fiilis + Environment.NewLine;
+                Data.Text = line;
                 Data.Text = line;
 
 

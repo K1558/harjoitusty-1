@@ -82,7 +82,7 @@
             <Button x:Name="Valmis" Content="Valmis"  Margin="20" VerticalAlignment="Top" RelativePanel.Below="Data" Click="Valmis_Click" Background="Transparent" BorderBrush="DarkGray" RelativePanel.RightOf="Tallenna"/>
             <TextBlock x:Name="slidervalue" TextWrapping="Wrap" Text="{Binding Value, ElementName=slidervalue, Mode=OneWay}" RelativePanel.Below="fiilis" Margin="2"/>
             <Button x:Name="Tallenna" Content="Tallenna" Margin="20" VerticalAlignment="Top"  RelativePanel.Below="Data" FontFamily="Yu Gothic" Background="Transparent" BorderBrush="DarkGray" Height="32" Click="Tallenna_Click" />
-            <TextBlock x:Name="Data" Margin="5,-11,5,17" TextWrapping="Wrap" Text="" MaxHeight="100"  Width="350" RelativePanel.Below="slidervalue" FontFamily="Yu Gothic"/>
+            <TextBlock x:Name="Data" Margin="5,-11,5,17" TextWrapping="Wrap" Text="" MaxHeight="20" ScrollViewer.VerticalScrollBarVisibility="Auto"  Width="350" RelativePanel.Below="slidervalue" FontFamily="Yu Gothic"/>
             <ScrollViewer Height="24" VerticalAlignment="Top" Width="355" Margin="0,505,0,-505"/>
         </RelativePanel>
     </Grid>
