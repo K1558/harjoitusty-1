@@ -1,11 +1,10 @@
 ﻿<Page
-    x:Class="harjoitustyö.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    x:Class="harjoitustyö.harjoituslogisivu"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:harjoitustyö"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    RequestedTheme="Light"
     mc:Ignorable="d">
 
     <Grid>
@@ -16,9 +15,7 @@
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="b1.FontSize" Value="15"/>
-                        <Setter Target="b2.FontSize" Value="15"/>
-                        <Setter Target="Header.FontSize" Value="48"/>
+                        <Setter Target="Header1.FontSize" Value="48"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Tablet">
@@ -26,9 +23,7 @@
                         <AdaptiveTrigger MinWindowWidth="900"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="b1.FontSize" Value="20"/>
-                        <Setter Target="b2.FontSize" Value="20"/>
-                        <Setter Target="Header.FontSize" Value="55"/>
+                        <Setter Target="Header1.FontSize" Value="55"/>
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Desktop">
@@ -36,9 +31,7 @@
                         <AdaptiveTrigger MinWindowWidth="1300"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="b2.FontSize" Value="40"/>
-                        <Setter Target="b1.FontSize" Value="40"/>
-                        <Setter Target="Header.FontSize" Value="60"/>
+                        <Setter Target="Header1.FontSize" Value="60"/>
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
@@ -46,10 +39,12 @@
         <Grid.Background>
             <ImageBrush Stretch="Fill" ImageSource="Assets/fitmp.png" AlignmentX="Center" AlignmentY="Top"/>
         </Grid.Background>
-        <RelativePanel HorizontalAlignment="Center"  Height="640">
-            <Button x:Name="b1" Content="Uusi harjoitus"  Margin="50"  Click="b1_Click" RelativePanel.Below="Header" BorderBrush="DarkGray" Background="Transparent" FontFamily="Yu Gothic" />
-            <Button x:Name="b2" Content="Harjoituslogi" Margin="50" RelativePanel.Below="b1" BorderBrush="DarkGray" Background="Transparent" FontFamily="Yu Gothic" Click="b2_Click"/>
-            <TextBlock x:Name="Header" Height="auto" TextWrapping="Wrap" Text="Treenisi" VerticalAlignment="Top" FontFamily="Yu Gothic" FontSize="48" Margin="30" Foreground="OldLace" CharacterSpacing="-1"/>
+        <RelativePanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="640">
+            <TextBlock x:Name="Header1"  Margin="20" TextWrapping="Wrap" Text="Harjoituslogi" VerticalAlignment="Top" FontFamily="Yu Gothic" Foreground="AntiqueWhite" />
+            <TextBlock x:Name="logi" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" Margin="20" RelativePanel.Below="Header1" Width="300" ScrollViewer.VerticalScrollBarVisibility="Auto" MaxHeight="500"/>
+            <Button x:Name="b5" Content="Pääsivulle" Height="auto" VerticalAlignment="Top" Margin="0,573,0,-573" Background="Transparent" FontFamily="Yu Gothic" BorderBrush="DarkGray" Click="b5_Click"/>
+            <Button x:Name="Lue" Content="Lue" Height="auto" VerticalAlignment="Top" Margin="10,573,10,-600" Background="Transparent" FontFamily="Yu Gothic" BorderBrush="DarkGray" Click="Lue_Click" RelativePanel.RightOf="b5"/>
+
         </RelativePanel>
     </Grid>
 </Page>
