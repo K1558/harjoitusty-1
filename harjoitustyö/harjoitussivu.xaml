@@ -78,11 +78,11 @@
             <TextBox x:Name="avg"  Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="avg.syke" Width="350" RelativePanel.Below="max" FontFamily="Yu Gothic"/>
             <TextBox x:Name="kalorit" Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" PlaceholderText="Kalorit" Width="350" RelativePanel.Below="avg" FontFamily="Yu Gothic"/>
             <TextBox x:Name="kommentit" Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxHeight="100" ScrollViewer.VerticalScrollBarVisibility="Auto" PlaceholderText="Kommentteja" Width="350" RelativePanel.Below="kalorit" FontFamily="Yu Gothic"/>
-            <Slider x:Name="fiilis"  Margin="10" VerticalAlignment="Top" Width="350" ValueChanged="Slider_ValueChanged" Header="Fiilis %" RelativePanel.Below="kommentit" FontFamily="Yu Gothic" />
-            <Button x:Name="Valmis" Content="Valmis"  Margin="10" VerticalAlignment="Top" RelativePanel.Below="Data" Click="Valmis_Click" Background="Transparent" BorderBrush="DarkGray" RelativePanel.RightOf="Tallenna"/>
+            <Slider x:Name="fiilis"  Margin="5" VerticalAlignment="Top" Width="350" ValueChanged="Slider_ValueChanged" Header="Fiilis %" RelativePanel.Below="kommentit" FontFamily="Yu Gothic" />
+            <Button x:Name="Valmis" Content="Valmis"  Margin="20" VerticalAlignment="Top" RelativePanel.Below="Data" Click="Valmis_Click" Background="Transparent" BorderBrush="DarkGray" RelativePanel.RightOf="Tallenna"/>
             <TextBlock x:Name="slidervalue" TextWrapping="Wrap" Text="{Binding Value, ElementName=slidervalue, Mode=OneWay}" RelativePanel.Below="fiilis" Margin="2"/>
-            <Button x:Name="Tallenna" Content="Tallenna" Margin="10,10,10,0" VerticalAlignment="Top"  RelativePanel.Below="Data" FontFamily="Yu Gothic" Background="Transparent" BorderBrush="DarkGray" Height="32" Click="Tallenna_Click" />
-            <TextBlock x:Name="Data" Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Top" MaxHeight="100" ScrollViewer.VerticalScrollBarVisibility="Auto"  Width="350" RelativePanel.Below="slidervalue" FontFamily="Yu Gothic"/>
+            <Button x:Name="Tallenna" Content="Tallenna" Margin="20" VerticalAlignment="Top"  RelativePanel.Below="Data" FontFamily="Yu Gothic" Background="Transparent" BorderBrush="DarkGray" Height="32" Click="Tallenna_Click" />
+            <TextBlock x:Name="Data" Margin="5" TextWrapping="Wrap" Text="" MaxHeight="100"  Width="350" RelativePanel.Below="slidervalue" FontFamily="Yu Gothic"/>
         </RelativePanel>
     </Grid>
 </Page>
