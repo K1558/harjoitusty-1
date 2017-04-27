@@ -87,14 +87,14 @@ namespace harjoitustyö
             {
                 try
                 {
-                    // Use FileIO to replace the content of the text file
+                    // lisaa tekstia
                     await FileIO.AppendTextAsync(result, Data.Text);
-                    // Display a success message
+                    // onnistunut tallennus
                     ShowMessageBox("Tallennus onnistui!");
                 }
                 catch (Exception ex)
                 {
-                    // Display an error message
+                    // error message
                     ShowMessageBox(ex.Message);
                 }
             }
@@ -124,7 +124,7 @@ namespace harjoitustyö
                 harjoitus.Kommentit = kommentit.Text;
                 harjoitus.Fiilis = slidervalue.Text;
 
-                string line = harjoitus.Paiva + ":" + harjoitus.Laji + ":" + harjoitus.MaxSyke + ":" + harjoitus.AvgSyke + ":" + harjoitus.Kalorit + ":" + harjoitus.Kommentit + ":" + harjoitus.Fiilis + Environment.NewLine;
+                string line = harjoitus.Paiva + "Laji: " + harjoitus.Laji + " Max Syke: " + harjoitus.MaxSyke + " Keski Syke: " + harjoitus.AvgSyke + " Kalorit: " + harjoitus.Kalorit + " Kommentit: " + harjoitus.Kommentit + " :" + harjoitus.Fiilis + Environment.NewLine;
                 Data.Text = line;
 
 

@@ -49,27 +49,25 @@ namespace harjoitustyö
             {
                 //FilePicker
                 FileOpenPicker picker = new FileOpenPicker();
-                // Set properties on the file picker such as start location and the type 
-                // of files to display.
+                // valitse valmis tiedosto 
                 picker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
                 picker.ViewMode = PickerViewMode.List;
                 picker.FileTypeFilter.Add(".txt");
 
-                // Show picker enabling user to pick one file.
                 StorageFile result = await picker.PickSingleFileAsync();
 
                 if (result != null)
                 {
                     try
                     {
-                        // Use FileIO to replace the content of the text file
+                        // lue valittu tiedosto
                         ShowMessageBox(await FileIO.ReadTextAsync(result));
 
 
                     }
                     catch (Exception ex)
                     {
-                        // Display an error message
+                        // error message
                         ShowMessageBox(ex.Message);
                     }
                 }
