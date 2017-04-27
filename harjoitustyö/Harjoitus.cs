@@ -11,11 +11,12 @@ namespace harjoitustyö
 {
     public class Harjoitus : INotifyPropertyChanged
     {
-        // Declare the event
+        
         public event PropertyChangedEventHandler PropertyChanged;
 
         /// <summary>
-      
+        /// *Ella Viitasuo Olio-ohjelmointi kurssi*
+        /// Harjoitus-luokka, jonka avulla tallennetaan harjoituksia
         /// </summary>
         protected void RaisePropertyChanged([CallerMemberName] string propertyName = null)
         {
